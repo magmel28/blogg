@@ -23,6 +23,8 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'passenger', '~> 5.0', '>= 5.0.24'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -43,5 +45,12 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  gem 'capistrano', '~> 3.4', require: false
+  gem 'capistrano-rbenv', '~> 2.0', '>= 2.0.4', require: false
+  gem 'capistrano-rails', '~> 1.1', '>= 1.1.6', require: false
+  gem 'capistrano-bundler', '~> 1.1', '>= 1.1.4', require: false
+  gem 'capistrano-passenger', '~> 0.2.0', require: false
+  gem "airbrussh", :require => false # Feel free to remove this gem, if you are fine with the normal out from capistrano
 end
 
