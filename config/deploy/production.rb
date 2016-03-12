@@ -1,7 +1,7 @@
 set :stage, :production
 set :rails_env, :production
 
-server '46.101.188.74', port: '222', roles: [:web, :app, :db], primary: true
+server '95.213.235.179', port: '22', roles: [:web, :app, :db], primary: true
 
 # server-based syntax
 # ======================
